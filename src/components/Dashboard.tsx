@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_arithmetic_operations')}
+          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
+          onClick={() => setActiveTab('user_authentication_&_onboarding')}
         >
-          Basic Arithmetic Operations
+          User Authentication & Onboarding
         </button>
         <button 
-          className={activeTab === 'advanced_scientific_functions' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_scientific_functions')}
+          className={activeTab === 'basic_arithmetic_functions_(addition,_subtraction,_multiplication,_division)' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_arithmetic_functions_(addition,_subtraction,_multiplication,_division)')}
         >
-          Advanced Scientific Functions
+          Basic Arithmetic Functions (Addition, Subtraction, Multiplication, Division)
         </button>
         <button 
-          className={activeTab === 'graphing_capabilities' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_capabilities')}
+          className={activeTab === 'advanced_calculations_(scientific,_graphing)' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_calculations_(scientific,_graphing)')}
         >
-          Graphing Capabilities
+          Advanced Calculations (Scientific, Graphing)
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'basic_arithmetic_operations' && (
+        {activeTab === 'user_authentication_&_onboarding' && (
           <div className="tab-content">
-            <h2>Basic Arithmetic Operations</h2>
-            <p>Manage your basic arithmetic operations here.</p>
+            <h2>User Authentication & Onboarding</h2>
+            <p>Manage your user authentication & onboarding here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_scientific_functions' && (
+        {activeTab === 'basic_arithmetic_functions_(addition,_subtraction,_multiplication,_division)' && (
           <div className="tab-content">
-            <h2>Advanced Scientific Functions</h2>
-            <p>Manage your advanced scientific functions here.</p>
+            <h2>Basic Arithmetic Functions (Addition, Subtraction, Multiplication, Division)</h2>
+            <p>Manage your basic arithmetic functions (addition, subtraction, multiplication, division) here.</p>
           </div>
         )}
 
-        {activeTab === 'graphing_capabilities' && (
+        {activeTab === 'advanced_calculations_(scientific,_graphing)' && (
           <div className="tab-content">
-            <h2>Graphing Capabilities</h2>
-            <p>Manage your graphing capabilities here.</p>
+            <h2>Advanced Calculations (Scientific, Graphing)</h2>
+            <p>Manage your advanced calculations (scientific, graphing) here.</p>
           </div>
         )}
       </div>

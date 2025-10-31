@@ -4,12 +4,12 @@ CalcMaster Pro - Built with React + TypeScript + Vite
 
 ## Features
 
-- User Authentication & Onboarding
-- Real-time Calculations
-- Data Visualization & Charts
-- Collaborative Workspaces
-- Customizable Calculations
-- History Tracking & Management
+- Real-time Collaboration
+- Advanced Graphing Capabilities
+- Customizable Calculations and Functions
+- Data Analytics Dashboard
+- User-Friendly Interface
+- Multi-Device Synchronization
 
 ## Tech Stack
 

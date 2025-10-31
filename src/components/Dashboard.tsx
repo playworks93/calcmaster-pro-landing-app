@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'advanced_scientific_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_scientific_calculations')}
+          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
+          onClick={() => setActiveTab('user_authentication_&_onboarding')}
         >
-          Advanced Scientific Calculations
+          User Authentication & Onboarding
         </button>
         <button 
-          className={activeTab === 'graphing_capabilities' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_capabilities')}
+          className={activeTab === 'real_time_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_calculations')}
         >
-          Graphing Capabilities
+          Real Time Calculations
         </button>
         <button 
-          className={activeTab === 'history_tracking_of_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('history_tracking_of_calculations')}
+          className={activeTab === 'data_visualization_&_charts' ? 'active' : ''}
+          onClick={() => setActiveTab('data_visualization_&_charts')}
         >
-          History Tracking Of Calculations
+          Data Visualization & Charts
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'advanced_scientific_calculations' && (
+        {activeTab === 'user_authentication_&_onboarding' && (
           <div className="tab-content">
-            <h2>Advanced Scientific Calculations</h2>
-            <p>Manage your advanced scientific calculations here.</p>
+            <h2>User Authentication & Onboarding</h2>
+            <p>Manage your user authentication & onboarding here.</p>
           </div>
         )}
 
-        {activeTab === 'graphing_capabilities' && (
+        {activeTab === 'real_time_calculations' && (
           <div className="tab-content">
-            <h2>Graphing Capabilities</h2>
-            <p>Manage your graphing capabilities here.</p>
+            <h2>Real-time Calculations</h2>
+            <p>Manage your real time calculations here.</p>
           </div>
         )}
 
-        {activeTab === 'history_tracking_of_calculations' && (
+        {activeTab === 'data_visualization_&_charts' && (
           <div className="tab-content">
-            <h2>History Tracking of Calculations</h2>
-            <p>Manage your history tracking of calculations here.</p>
+            <h2>Data Visualization & Charts</h2>
+            <p>Manage your data visualization & charts here.</p>
           </div>
         )}
       </div>

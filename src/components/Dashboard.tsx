@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           Basic Arithmetic Operations
         </button>
         <button 
+          className={activeTab === 'advanced_scientific_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_scientific_functions')}
+        >
+          Advanced Scientific Functions
+        </button>
+        <button 
           className={activeTab === 'graphing_capabilities' ? 'active' : ''}
           onClick={() => setActiveTab('graphing_capabilities')}
         >
           Graphing Capabilities
-        </button>
-        <button 
-          className={activeTab === 'statistical_analysis_tools' ? 'active' : ''}
-          onClick={() => setActiveTab('statistical_analysis_tools')}
-        >
-          Statistical Analysis Tools
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
+        {activeTab === 'advanced_scientific_functions' && (
+          <div className="tab-content">
+            <h2>Advanced Scientific Functions</h2>
+            <p>Manage your advanced scientific functions here.</p>
+          </div>
+        )}
+
         {activeTab === 'graphing_capabilities' && (
           <div className="tab-content">
             <h2>Graphing Capabilities</h2>
             <p>Manage your graphing capabilities here.</p>
-          </div>
-        )}
-
-        {activeTab === 'statistical_analysis_tools' && (
-          <div className="tab-content">
-            <h2>Statistical Analysis Tools</h2>
-            <p>Manage your statistical analysis tools here.</p>
           </div>
         )}
       </div>

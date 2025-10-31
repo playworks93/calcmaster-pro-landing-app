@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'real_time_collaboration' ? 'active' : ''}
-          onClick={() => setActiveTab('real_time_collaboration')}
+          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_arithmetic_operations')}
         >
-          Real Time Collaboration
+          Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'advanced_graphing_capabilities' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_graphing_capabilities')}
+          className={activeTab === 'graphing_capabilities' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_capabilities')}
         >
-          Advanced Graphing Capabilities
+          Graphing Capabilities
         </button>
         <button 
-          className={activeTab === 'customizable_calculations_and_functions' ? 'active' : ''}
-          onClick={() => setActiveTab('customizable_calculations_and_functions')}
+          className={activeTab === 'statistical_analysis_tools' ? 'active' : ''}
+          onClick={() => setActiveTab('statistical_analysis_tools')}
         >
-          Customizable Calculations And Functions
+          Statistical Analysis Tools
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'real_time_collaboration' && (
+        {activeTab === 'basic_arithmetic_operations' && (
           <div className="tab-content">
-            <h2>Real-time Collaboration</h2>
-            <p>Manage your real time collaboration here.</p>
+            <h2>Basic Arithmetic Operations</h2>
+            <p>Manage your basic arithmetic operations here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_graphing_capabilities' && (
+        {activeTab === 'graphing_capabilities' && (
           <div className="tab-content">
-            <h2>Advanced Graphing Capabilities</h2>
-            <p>Manage your advanced graphing capabilities here.</p>
+            <h2>Graphing Capabilities</h2>
+            <p>Manage your graphing capabilities here.</p>
           </div>
         )}
 
-        {activeTab === 'customizable_calculations_and_functions' && (
+        {activeTab === 'statistical_analysis_tools' && (
           <div className="tab-content">
-            <h2>Customizable Calculations and Functions</h2>
-            <p>Manage your customizable calculations and functions here.</p>
+            <h2>Statistical Analysis Tools</h2>
+            <p>Manage your statistical analysis tools here.</p>
           </div>
         )}
       </div>

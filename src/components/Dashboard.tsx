@@ -21,10 +21,10 @@ const Dashboard = (props: DashboardProps) => {
           Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'advanced_functions_(trigonometric,_logarithmic)' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_functions_(trigonometric,_logarithmic)')}
+          className={activeTab === 'advanced_functions_(e.g.,_trigonometric,_logarithmic)' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_functions_(e.g.,_trigonometric,_logarithmic)')}
         >
-          Advanced Functions (Trigonometric, Logarithmic)
+          Advanced Functions (E.G., Trigonometric, Logarithmic)
         </button>
         <button 
           className={activeTab === 'graphing_capabilities' ? 'active' : ''}
@@ -62,10 +62,10 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'advanced_functions_(trigonometric,_logarithmic)' && (
+        {activeTab === 'advanced_functions_(e.g.,_trigonometric,_logarithmic)' && (
           <div className="tab-content">
-            <h2>Advanced Functions (Trigonometric, Logarithmic)</h2>
-            <p>Manage your advanced functions (trigonometric, logarithmic) here.</p>
+            <h2>Advanced Functions (e.g., Trigonometric, Logarithmic)</h2>
+            <p>Manage your advanced functions (e.g., trigonometric, logarithmic) here.</p>
           </div>
         )}
 

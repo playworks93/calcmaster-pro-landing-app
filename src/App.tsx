@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import CalculatorDisplay from './components/CalculatorDisplay'
-import ButtonPad from './components/ButtonPad'
-import HistoryPanel from './components/HistoryPanel'
-import SettingsModal from './components/SettingsModal'
-import GraphingTool from './components/GraphingTool'
+import AuthComponent from './components/AuthComponent'
+import CalculatorComponent from './components/CalculatorComponent'
+import AnalyticsDashboardComponent from './components/AnalyticsDashboardComponent'
+import HistoryComponent from './components/HistoryComponent'
+import CollaborationComponent from './components/CollaborationComponent'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcMaster Pro</h1>
-          <p className="tagline">Empower Your Calculations</p>
+          <p className="tagline">Your Advanced Calculation Companion</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>Basic Arithmetic Operations</li>
-          <li>Advanced Scientific Functions</li>
-          <li>Graphing Capabilities</li>
-          <li>Data Sharing and Collaboration</li>
-          <li>Customizable User Interface</li>
-          <li>Performance Analytics Dashboard</li>
+          <li>User Authentication & Onboarding</li>
+          <li>Basic Arithmetic Functions (Addition, Subtraction, Multiplication, Division)</li>
+          <li>Advanced Calculations (Scientific, Graphing)</li>
+          <li>Analytics Dashboard for Insights</li>
+          <li>Collaboration Tools for Sharing Results</li>
+          <li>History of Calculations</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcMaster Pro. Built with React + TypeScript + Vite</p>

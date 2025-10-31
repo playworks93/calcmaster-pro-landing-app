@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import AuthComponent from './components/AuthComponent'
-import CalculatorComponent from './components/CalculatorComponent'
-import ChartComponent from './components/ChartComponent'
-import HistoryComponent from './components/HistoryComponent'
-import WorkspaceComponent from './components/WorkspaceComponent'
+import CalculatorDisplay from './components/CalculatorDisplay'
+import InputPanel from './components/InputPanel'
+import GraphingArea from './components/GraphingArea'
+import AnalyticsDashboard from './components/AnalyticsDashboard'
+import UserSettings from './components/UserSettings'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcMaster Pro</h1>
-          <p className="tagline">Effortless Calculations, Insightful Analytics</p>
+          <p className="tagline">Advanced Calculator with Collaboration Tools</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Authentication & Onboarding</li>
-          <li>Real-time Calculations</li>
-          <li>Data Visualization & Charts</li>
-          <li>Collaborative Workspaces</li>
-          <li>Customizable Calculations</li>
-          <li>History Tracking & Management</li>
+          <li>Real-time Collaboration</li>
+          <li>Advanced Graphing Capabilities</li>
+          <li>Customizable Calculations and Functions</li>
+          <li>Data Analytics Dashboard</li>
+          <li>User-Friendly Interface</li>
+          <li>Multi-Device Synchronization</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcMaster Pro. Built with React + TypeScript + Vite</p>

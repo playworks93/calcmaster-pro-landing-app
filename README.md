@@ -5,11 +5,11 @@ CalcMaster Pro - Built with React + TypeScript + Vite
 ## Features
 
 - Basic Arithmetic Operations
+- Advanced Scientific Functions
 - Graphing Capabilities
-- Statistical Analysis Tools
-- Unit Conversion
-- Collaboration via Shared Workspaces
-- History of Calculations
+- Data Sharing and Collaboration
+- Customizable User Interface
+- Performance Analytics Dashboard
 
 ## Tech Stack
 

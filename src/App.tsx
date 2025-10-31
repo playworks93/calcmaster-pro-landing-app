@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import CalculatorDisplay from './components/CalculatorDisplay'
-import CalculatorButtons from './components/CalculatorButtons'
-import HistoryPanel from './components/HistoryPanel'
-import GraphingTool from './components/GraphingTool'
-import SettingsModal from './components/SettingsModal'
+import ButtonPanel from './components/ButtonPanel'
+import HistoryLog from './components/HistoryLog'
+import GraphView from './components/GraphView'
+import SettingsMenu from './components/SettingsMenu'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcMaster Pro</h1>
-          <p className="tagline">Empowering Calculations, Effortlessly.</p>
+          <p className="tagline">Empower Your Calculations</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>Basic Arithmetic Operations</li>
-          <li>Advanced Functions (e.g., Trigonometric, Logarithmic)</li>
+          <li>Advanced Scientific Calculations</li>
           <li>Graphing Capabilities</li>
-          <li>Unit Conversion</li>
-          <li>Data Collaboration Tools</li>
-          <li>History of Calculations</li>
+          <li>History Tracking of Calculations</li>
+          <li>Collaborative Calculation Sharing</li>
+          <li>Customizable User Interface</li>
+          <li>Multi-language Support</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcMaster Pro. Built with React + TypeScript + Vite</p>

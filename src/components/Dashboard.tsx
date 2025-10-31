@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_arithmetic_operations')}
+          className={activeTab === 'advanced_scientific_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_scientific_calculations')}
         >
-          Basic Arithmetic Operations
-        </button>
-        <button 
-          className={activeTab === 'advanced_functions_(e.g.,_trigonometric,_logarithmic)' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_functions_(e.g.,_trigonometric,_logarithmic)')}
-        >
-          Advanced Functions (E.G., Trigonometric, Logarithmic)
+          Advanced Scientific Calculations
         </button>
         <button 
           className={activeTab === 'graphing_capabilities' ? 'active' : ''}
           onClick={() => setActiveTab('graphing_capabilities')}
         >
           Graphing Capabilities
+        </button>
+        <button 
+          className={activeTab === 'history_tracking_of_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('history_tracking_of_calculations')}
+        >
+          History Tracking Of Calculations
         </button>
       </nav>
 
@@ -55,17 +55,10 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'basic_arithmetic_operations' && (
+        {activeTab === 'advanced_scientific_calculations' && (
           <div className="tab-content">
-            <h2>Basic Arithmetic Operations</h2>
-            <p>Manage your basic arithmetic operations here.</p>
-          </div>
-        )}
-
-        {activeTab === 'advanced_functions_(e.g.,_trigonometric,_logarithmic)' && (
-          <div className="tab-content">
-            <h2>Advanced Functions (e.g., Trigonometric, Logarithmic)</h2>
-            <p>Manage your advanced functions (e.g., trigonometric, logarithmic) here.</p>
+            <h2>Advanced Scientific Calculations</h2>
+            <p>Manage your advanced scientific calculations here.</p>
           </div>
         )}
 
@@ -73,6 +66,13 @@ const Dashboard = (props: DashboardProps) => {
           <div className="tab-content">
             <h2>Graphing Capabilities</h2>
             <p>Manage your graphing capabilities here.</p>
+          </div>
+        )}
+
+        {activeTab === 'history_tracking_of_calculations' && (
+          <div className="tab-content">
+            <h2>History Tracking of Calculations</h2>
+            <p>Manage your history tracking of calculations here.</p>
           </div>
         )}
       </div>

@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import CalculatorDisplay from './components/CalculatorDisplay'
-import ButtonPanel from './components/ButtonPanel'
-import HistoryLog from './components/HistoryLog'
-import GraphingComponent from './components/GraphingComponent'
-import SettingsPanel from './components/SettingsPanel'
+import CalculatorButtons from './components/CalculatorButtons'
+import HistoryPanel from './components/HistoryPanel'
+import GraphingTool from './components/GraphingTool'
+import SettingsModal from './components/SettingsModal'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcMaster Pro</h1>
-          <p className="tagline">Your Ultimate Calculation Companion</p>
+          <p className="tagline">Empowering Calculations, Effortlessly.</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -45,11 +45,11 @@ function App() {
           <h3>Key Features:</h3>
           <ul>
           <li>Basic Arithmetic Operations</li>
-          <li>Advanced Functions (Trigonometric, Logarithmic)</li>
+          <li>Advanced Functions (e.g., Trigonometric, Logarithmic)</li>
           <li>Graphing Capabilities</li>
-          <li>Historical Calculation Log</li>
-          <li>Collaboration Tools (Share Calculations)</li>
-          <li>Data Analytics Integration</li>
+          <li>Unit Conversion</li>
+          <li>Data Collaboration Tools</li>
+          <li>History of Calculations</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcMaster Pro. Built with React + TypeScript + Vite</p>

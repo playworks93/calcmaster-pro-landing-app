@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication_&_onboarding')}
+          className={activeTab === 'real_time_collaboration' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_collaboration')}
         >
-          User Authentication & Onboarding
+          Real Time Collaboration
         </button>
         <button 
-          className={activeTab === 'real_time_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('real_time_calculations')}
+          className={activeTab === 'advanced_graphing_capabilities' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_graphing_capabilities')}
         >
-          Real Time Calculations
+          Advanced Graphing Capabilities
         </button>
         <button 
-          className={activeTab === 'data_visualization_&_charts' ? 'active' : ''}
-          onClick={() => setActiveTab('data_visualization_&_charts')}
+          className={activeTab === 'customizable_calculations_and_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('customizable_calculations_and_functions')}
         >
-          Data Visualization & Charts
+          Customizable Calculations And Functions
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication_&_onboarding' && (
+        {activeTab === 'real_time_collaboration' && (
           <div className="tab-content">
-            <h2>User Authentication & Onboarding</h2>
-            <p>Manage your user authentication & onboarding here.</p>
+            <h2>Real-time Collaboration</h2>
+            <p>Manage your real time collaboration here.</p>
           </div>
         )}
 
-        {activeTab === 'real_time_calculations' && (
+        {activeTab === 'advanced_graphing_capabilities' && (
           <div className="tab-content">
-            <h2>Real-time Calculations</h2>
-            <p>Manage your real time calculations here.</p>
+            <h2>Advanced Graphing Capabilities</h2>
+            <p>Manage your advanced graphing capabilities here.</p>
           </div>
         )}
 
-        {activeTab === 'data_visualization_&_charts' && (
+        {activeTab === 'customizable_calculations_and_functions' && (
           <div className="tab-content">
-            <h2>Data Visualization & Charts</h2>
-            <p>Manage your data visualization & charts here.</p>
+            <h2>Customizable Calculations and Functions</h2>
+            <p>Manage your customizable calculations and functions here.</p>
           </div>
         )}
       </div>
